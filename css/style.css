@@ -1,0 +1,124 @@
+/*========================================
+
+
+  Universial Styling
+
+
+===========================================*/
+*{
+margin: 0;
+padding: 0;
+border: 0;
+}
+  
+h1 {
+    font-family: 'EB Garamond', serif;
+    color: whitesmoke;
+    padding-top: 30pt;
+    padding-bottom: 20pt;
+    padding-left: 20pt;
+}
+  
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'EB Garamond', serif;
+  }
+  
+p,
+ul,
+li,
+a {
+    font-family: 'EB Garamond', serif;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+  
+@font-face {
+    font-family: 'Froad';
+    src: url('../fonts/froad-mile.ttf'); format:('truetype');
+}
+  
+h2 {
+    font-family: 'Froad', sans-serif;
+    color: #162d4a;
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 5px;
+    margin-top: 30pt;
+    margin-bottom: 30px;
+}
+  
+h3 {
+    font-size: 18px;
+    color: rgb(48, 128, 194);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+  
+p {
+    color: whitesmoke;
+    font-weight: bold;
+}
+  
+body {
+    background-color: rgba(5, 35, 70, 0.918);
+}
+  
+main .container {
+    margin: 90px auto;
+}
+  
+header {
+    background: #080808;
+    padding-bottom: 2mm;
+}
+  
+nav {
+    padding-left: 40pt;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    background: #f2f2f2;
+    padding: 10px 20px;
+    transition: .5s;
+    width: 100px;
+}
+  
+nav a:hover {
+    background: skyblue;
+    color: #f2f2f2;
+    transition: .5s;
+}
+
+/* visited link */
+    a:visited {
+    color: #080808;
+}
+
+/* mouse over link */
+    a:hover {
+    color: skyblue;
+}
+
+
+
+  
+footer {
+    text-decoration: underline;
+    background: rgba(0, 0, 0, 0.212);
+    text-align: center;
+    color: black;
+    padding: 4rem 0;
+    margin-top: 80px;
+}
+  
