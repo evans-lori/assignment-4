@@ -73,10 +73,6 @@ body {
     background-color: rgba(5, 35, 70, 0.918);
 }
   
-main .container {
-    margin: 90px auto;
-}
-  
 header {
     background: #080808;
     padding-bottom: 2mm;
@@ -100,7 +96,7 @@ nav a {
 }
   
 nav a:hover {
-    background: skyblue;
+    background:rgb(48, 128, 194);
     color: #f2f2f2;
     transition: .5s;
 }
@@ -110,20 +106,52 @@ nav a:hover {
     color: #080808;
 }
 
-/* mouse over link */
-    a:hover {
-    color: skyblue;
+header h1 {
+    width: 30%;
+    display: inline-block;
 }
 
+header nav {
+    width: 65%;
+    display: inline-block;
+    text-align: right;
+}
 
+header li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+main .container {
+    margin: 90px auto;
+}
 
   
 footer {
-    text-decoration: underline;
+    text-decoration: none;
     background: rgba(0, 0, 0, 0.212);
     text-align: center;
     color: black;
     padding: 4rem 0;
     margin-top: 80px;
 }
-  
+ 
+/*========================
+
+    First Section Styling
+
+==========================*/
+.left-half, 
+.right-half {
+    width: 45%;
+    display: inline-block;
+}
+
+.left-half img {
+    width: 100%;
+}
+
+.right-half {
+    vertical-align: top;
+    padding: 30px;
+}
