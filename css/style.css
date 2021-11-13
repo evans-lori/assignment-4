@@ -1,7 +1,7 @@
 /*========================================
 
 
-  Universial Styling
+ Universal Styling
 
 
 ===========================================*/
@@ -12,13 +12,15 @@ border: 0;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
+    padding-top: 200pt;
 }
   
 h1 {
     font-family: 'EB Garamond', serif;
-    color: whitesmoke;
+    color: #F4F4F4;
+    margin-top: 0px;
     padding-top: 30pt;
     padding-bottom: 20pt;
     padding-left: 20pt;
@@ -36,9 +38,18 @@ ul,
 li,
 a {
     font-family: 'EB Garamond', serif;
-    color: black;
+    color: #F4F4F4;
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+ol {
+    list-style-type: upper-alpha;
+    list-style-type: upper-alpha;
+    position: relative;
+    top: -20px;
+    bottom: 0;
+    left: 50px;
 }
   
 @font-face {
@@ -48,37 +59,37 @@ a {
   
 h2 {
     font-family: 'Froad', sans-serif;
-    color: #f2f2f2;
+    color: #F4F4F4;
     text-align: center;
     font-size: 70px;
     letter-spacing: 8px;
-    margin-top: 30pt;
     margin-bottom: 30px;
+    position: relative
 }
   
 h3 {
-    font-size: 18px;
-    color: rgb(48, 128, 194);
+    font-size: 50px;
+    color: #2DA2D1;
     margin-top: 30px;
     margin-bottom: 10px;
 }
   
-p {
-    color: whitesmoke;
-    font-weight: bold;
-}
-  
 body {
-    background-color: rgba(5, 35, 70, 0.918);
+    background-color: #146093;
+    color: #F4F4F4
 }
   
 header {
-    background: #080808;
-    padding-bottom: 2mm;
+    background: #121929ea;
+    padding-bottom: 10mm;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
 }
   
 nav {
-    padding-left: 40pt;
+    padding-left: 20pt;
 }
 
 nav ul li {
@@ -95,7 +106,7 @@ nav a {
 }
   
 nav a:hover {
-    background:rgb(48, 128, 194);
+    background:#2DA2D1;
     color: #f2f2f2;
     transition: .5s;
 }
@@ -124,15 +135,12 @@ header li {
 main .container {
     margin: 90px auto;
 }
-
-  
+ 
 footer {
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.212);
+    background: #12192940;
     text-align: center;
-    color: black;
-    padding: 4rem 0;
-    margin-top: 80px;
+    padding: 2rem 0;
 }
  
 /*========================
@@ -140,27 +148,12 @@ footer {
     First Section Styling
 
 ==========================*/
-.left-half, 
-.right-half {
-    width: 45%;
-    display: inline-block;
-}
-
-.left-half img {
-    width: 100%;
-}
-
-.right-half {
-    vertical-align: top;
-    padding: 30px;
-}
-
 .abyss-img {
-    width: 200px;
-    height: 500px;
+    float:left;
     transition: .5s;
-    position: relative;
-  }
+    margin-top: 0px;
+    margin-right: 20px;
+}
 
   .abyss-img:hover {
     animation: movement 5s;
@@ -173,4 +166,4 @@ footer {
     to {
       transform: rotateZ(360deg);
     }
-  }
+  } 
