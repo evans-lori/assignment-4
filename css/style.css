@@ -14,13 +14,12 @@ border: 0;
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 200pt;
+    padding-top: 150pt;
 }
   
 h1 {
     font-family: 'EB Garamond', serif;
     color: #F4F4F4;
-    margin-top: 0px;
     padding-top: 30pt;
     padding-bottom: 20pt;
     padding-left: 20pt;
@@ -52,26 +51,20 @@ ol {
     left: 50px;
 }
   
-@font-face {
-    font-family: 'Froad';
-    src: url('../fonts/froad-mile.ttf');
-}
-  
 h2 {
-    font-family: 'Froad', sans-serif;
+    font-family: 'Dancing Script', cursive;
     color: #F4F4F4;
     text-align: center;
-    font-size: 70px;
+    font-size: 80px;
     letter-spacing: 8px;
-    margin-bottom: 30px;
-    position: relative
+    margin-bottom: 50px;
 }
   
 h3 {
     font-size: 50px;
     color: #2DA2D1;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    position: relative;
+    left: 55px;
 }
   
 body {
@@ -111,11 +104,6 @@ nav a:hover {
     transition: .5s;
 }
 
-/* visited link */
-    a:visited {
-    color: #080808;
-}
-
 header h1 {
     width: 30%;
     display: inline-block;
@@ -141,21 +129,22 @@ footer {
     background: #12192940;
     text-align: center;
     padding: 2rem 0;
+    margin-top: 30px;
 }
  
 /*========================
 
-    First Section Styling
+    Image Styling
 
 ==========================*/
-.abyss-img {
+.abyss-book-img {
     float:left;
     transition: .5s;
     margin-top: 0px;
     margin-right: 20px;
 }
 
-  .abyss-img:hover {
+  .abyss-book-img:hover {
     animation: movement 5s;
   }
 
@@ -166,4 +155,20 @@ footer {
     to {
       transform: rotateZ(360deg);
     }
-  } 
+  }
+
+/*========================
+
+    Postion Absolute
+
+==========================*/
+.text-image-absolute-container {
+    position: relative;
+    max-width: 300px;
+  }
+
+.text-absolute-container {
+    position: absolute;
+    top: 0px;
+    padding: 9px 0px;
+  }
